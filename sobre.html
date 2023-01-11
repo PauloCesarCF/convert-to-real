@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="src/sobre.css">
+  <title>Sobre</title>
+</head>
+
+<body>
+  <div id="app">
+    <header>
+      <img src="src/img/CONVE.png" alt="logo.png">
+      <nav class="close">
+        <ul>
+          <li><a href="index.html">Dolár</a></li>
+          <li><a href="euro.html">Euro</a></li>
+          <li><a href="bitcoin.html">Bitcoin</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+      </nav>
+      <div class="menu">
+        <div class="line one"></div>
+        <div class="line two"></div>
+        <div class="line trhe"></div>
+      </div>
+    </header>
+
+    <main>
+      <section class="container">
+        <h1>Como funciona o site</h1>
+        <p>O intuíto do site é mostrar quanto 1 dólar, euro ou bitcoin vale em real, a informações são atualizadas a
+          cada 30 segundos.</p>
+        <h2>Tabela</h2>
+        <p>Você pode ver também o histórico da moeda nos ultimos 30 dias olhando o grafico da direita(mais recente) pra
+          esquerda(mais antiga).</p>
+        <canvas class="table"></canvas>
+        <h2>Conteúdo</h2>
+        <p>O site foi feito por <a href="https://github.com/paulocesarcf">Paulo</a> pórem todos os dados foi pego da API
+          do <a href="https://docs.awesomeapi.com.br/api-de-moedas">Awesome API</a>. Para ver mais projetos feitos por
+          <a href="https://github.com/paulocesarcf">Paulo</a>, clique no nome <a href="">aqui</a> para ver o portfólio
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>Feito por <a href="https://github.com/paulocesarcf">Paulo</a></p>
+      <p>Conteúdo pego do <a href="https://docs.awesomeapi.com.br/api-de-moedas">Awesome API</a></p>
+    </footer>
+
+    <script type="module" src="/src/sobre.ts"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  </div>
+</body>
+
+</html>

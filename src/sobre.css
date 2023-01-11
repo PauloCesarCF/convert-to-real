@@ -1,0 +1,15 @@
+@import url(style.css);
+
+.container{
+  width: 86vw;
+  padding: 0px 30px !important;
+  margin-bottom: 15px !important;
+}
+
+main{
+  align-items: baseline;
+}
+
+h1, h2{
+  margin: 15px 0px;
+}

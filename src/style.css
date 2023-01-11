@@ -1,0 +1,159 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: var(--font);
+}
+
+@font-face {
+  font-family: just-sans;
+  src: url(fonts/JUST-Sans-Regular.otf);
+}
+
+:root{
+  --blue: #04B3CB;
+  --black: #323232;
+  --gray: #E8E8E8;
+  --white: #ffffff;
+  --font: just-sans
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header{
+  width: 98vw;
+  background: var(--blue);
+  display: flex;
+  justify-content: space-around;
+  padding: 15px 0px;
+  border-bottom: 1px solid var(--black);
+}
+
+img{
+  width: 80px;
+}
+
+header nav ul{
+  display: flex;
+}
+
+header nav ul li{
+  list-style: none;
+  margin-left: 10px;
+}
+
+header div {
+  display: none;
+}
+
+a{
+  text-decoration: none;
+  color: var(--black)
+}
+
+a:hover{
+  opacity: .2;
+}
+
+main{
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main .container{
+  padding: 20px;
+  border-radius: 7px;
+  margin: 25px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.block{
+  background-color: var(--gray);
+  margin: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center
+}
+
+main section section{
+  display: flex;
+  flex-direction: row
+}
+
+footer{
+  background-color: var(--blue);
+  text-align: center;
+  padding: 35px;
+  border-top: 1px solid var(--black)
+}
+
+@media (max-width: 620px){
+  header div {
+    display: block;
+  }
+
+  .close{
+    display: none;
+  }
+
+  .open{
+    position: absolute;
+    top: 61px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px;
+    background: var(--blue);
+  }
+
+  header nav ul{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header nav ul li{
+    margin-bottom: 20px
+  }
+
+  .line {
+    display: block;
+    width: 30px;
+    height: 5px;
+    background-color: white;
+    margin-top: 5px
+  }
+
+  .active-1{
+    transform: rotate(45deg);
+    position: relative;
+    top: 9px
+  }
+
+  .active-2{
+    visibility: hidden;
+  }
+
+  .active-3{
+    transform: rotate(-45deg);
+    position: relative;
+    bottom: 11px
+  }
+
+  main section section{
+    flex-direction: column
+  }
+}

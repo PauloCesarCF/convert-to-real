@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DÓLAR/REAL</title>
+</head>
+
+<body>
+  <div id="app">
+    <header>
+      <img src="src/img/CONVE.png" alt="logo.png">
+      <nav class="close">
+        <ul>
+          <li><a href="index.html">Dolár</a></li>
+          <li><a href="euro.html">Euro</a></li>
+          <li><a href="bitcoin.html">Bitcoin</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+      </nav>
+      <div class="menu">
+        <div class="line one"></div>
+        <div class="line two"></div>
+        <div class="line trhe"></div>
+      </div>
+    </header>
+
+    <main>
+      <section class="container">
+        <p class="name"></p>
+        <section>
+          <section class="block">
+            <p>Valor atual</p>
+            <p class="now"></p>
+          </section>
+        </section>
+        <p>Atualizado à:</p>
+        <p class="temp"></p>
+        <canvas class="table"></canvas>
+      </section>
+    </main>
+
+
+    <footer>
+      <p>Feito por <a href="https://github.com/paulocesarcf">Paulo</a></p>
+      <p>Conteúdo pego do <a href="https://docs.awesomeapi.com.br/api-de-moedas">Awesome API</a></p>
+    </footer>
+  </div>
+  <script type="module" src="/src/main.ts"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+
+</html>
